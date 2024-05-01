@@ -15,7 +15,7 @@ const menuSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  variant: {
+  varient: {
     type: String,
     required: true
   },

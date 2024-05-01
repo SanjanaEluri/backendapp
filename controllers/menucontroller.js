@@ -3,7 +3,9 @@ const Menuseeker = require('../models/menuseeker');
 
 
 
-
+const display = (request, response) => {
+  response.send('<h3>Backend is running successfully!</h3>');
+};
 
 const insertmenu = async (request, response) => {
   try {
