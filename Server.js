@@ -24,6 +24,7 @@ mongoose.connect(dburl).then(() => {
 
 app.post('/insertmenu', upload.single('image'), menuController.insertmenu);
 app.get('/viewmenu',menuController.viewmenu);
+app.get('/',menuController.display);
 app.delete('/deletemenu/:itemname', menuController.deletemenu);
 
 const adminrouter =require("./routes/adminroutes");

@@ -1,6 +1,12 @@
 //menucontroller.js
 const Menuseeker = require('../models/menuseeker');
 
+
+
+const display = (request, response) => {
+  response.send('<h3>Backend is running successfully!</h3>');
+};
+
 const insertmenu = async (request, response) => {
   try {
     const { itemname,email, price, quantity,varient,category } = request.body;
@@ -106,4 +112,4 @@ const addtocart = async (request, response) => {
 
 
 
-  module.exports = {insertmenu,viewmenu,deletemenu,ordereditem,addtocart};
+  module.exports = {insertmenu,viewmenu,deletemenu,ordereditem,addtocart,display};
