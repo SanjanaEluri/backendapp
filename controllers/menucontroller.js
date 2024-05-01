@@ -3,7 +3,7 @@ const Menuseeker = require('../models/menuseeker');
 
 
 
-const display = (request, response) => {
+const display = ( response) => {
   response.send('<h3>Backend is running successfully!</h3>');
 };
 
